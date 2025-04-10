@@ -239,6 +239,19 @@ home{
     line-height: 1.5rem;
 }
 
+.about-detail{
+    width:100%;
+    padding:2rem;
+}
+.about-detail-conent{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+    align-items:canter;
+    border:2px solid var(--frist-color);
+    padding:1rem;
+}
+
 
 
 /* end about section */
