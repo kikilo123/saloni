@@ -23,3 +23,13 @@ function colorLink(){
 }
 
 linkColor.forEach(L=>L.addEventListener('click', colorLink));
+
+function scrollHeader(){
+    const scrollHeader=document.getElementById('hedaer')
+    if(this.scrollY >= 200){
+        scrollHeader.classList.add('scroll-header')
+    }else{
+        scrollHeader.classList.remove('scroll-header')
+    }
+}
+window.addEventListener('scroll',scrollHeader);
