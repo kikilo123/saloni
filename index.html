@@ -7,22 +7,43 @@
     <link rel="stylesheet" href="style.css">
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/4fee20cbeb.js" crossorigin="anonymous"></script>
-    <title>Bauty Salon</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Primary SEO Meta Tags -->
+    <meta name="description" content="Beauty Salon – indulge in elegant hair, makeup, nails and spa services. Find your style with our professional beauty experts.">
+    <meta name="keywords" content="beauty salon, hair style, nails, makeup, spa, elegance, wedding packages, personal care">
+    <meta name="author" content="Web Trader">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Beauty Salon – Professional Care and Style">
+    <meta property="og:description" content="Indulge in elegant beauty and spa services. Explore our bridal packages and gallery.">
+    <meta property="og:image" content="https://example.com/images/og-image.jpg"> <!-- Replace with your real image path -->
+    <meta property="og:url" content="https://yourdomain.com"> <!-- Replace with your domain -->
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="images/logo.jpg"> <!-- Replace with your favicon file -->
+
+    <title>Beauty Salon – Professional Care and Style</title>
 </head>
 <body>
     <header class="header" id="header">
         <div class="navbar">
             <div class="logo">
-                <img src="White Simple Name Design Logo.svg" width="100" height="100" alt="">
+                <img src="images/logo.jpg" width="80" height="80" alt="Salon Logo">
             </div>
             <nav class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="#" class="nav-link active">home</a></li>
-                    <li><a href="#about" class="nav-link">about</a></li>
-                    <li><a href="#services" class="nav-link">services</a></li>
-                    <li><a href="#package" class="nav-link">package</a></li>
-                    <li><a href="#gallery" class="nav-link">galleryer</a></li>
-                    <li><a href="#contact" class="nav-link">contact</a></li>
+                <ul class="nav-list" id="nav-list">
+                    <li><a href="#" class="nav-link active" data-key="home">მთავარი</a></li>
+                    <li><a href="#about" class="nav-link" data-key="about">შესახებ</a></li>
+                    <li><a href="#services" class="nav-link" data-key="services">სერვისები</a></li>
+                    <li><a href="#package" class="nav-link" data-key="package">პაკეტი</a></li>
+                    <li><a href="#gallery" class="nav-link" data-key="gallery">გალერეა</a></li>
+                    <li><a href="#contact" class="nav-link" data-key="contact">კონტაქტი</a></li>
+                    <li class="lang-switcher">
+                        <a href="#" class="nav-link lang-toggle" id="lang-toggle">EN</a>
+                        
+                      </li>
                 </ul>
             </nav>
             <div class="nav-toggle" id="nav-toggle">
@@ -39,20 +60,20 @@
             <div class="home-content">
                 <h1>Your big day <br><span>in style</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="#" class="btn btn-outline">
+                <a href="https://wa.me/9955XXXXXXX" target="_blank" class="btn btn-outline" data-key="schedule">
                     <i class="fa-brands fa-whatsapp"></i>
-                    Schedule your time
+                    დაიჯავშნე დრო
                 </a>
             </div>
         </div>
      </section>
     <!-- end home section -->
      <!-- start about section -->
-     <section class="about" id="about">
+     <section class="about reveal" id="about">
         <div class="container">
             <div class="section-title">
-                <h1>our story</h1>
-                <span>studio hair</span>
+                <h1 data-key="our_story">ჩვენს შესახებ</h1>
+                <span data-key="studio_hair">სილამაზის სტუდიო</span>
             </div>
             <div class="about-detail">
                 <div class="about-detail-conent">
@@ -60,9 +81,12 @@
                         <img src="pexels-cottonbro-3993320.jpg" width="400" alt="">
                     </div>
                     <div class="about-description">
-                       <p> opis. Sed sapiente temporibus suscipit ab doloribus tenetur molestiae voluptas velit commodi architecto fugit enim esse accusamus quas, eveniet perspiciatis nulla deleniti ducimus?</p>
-                       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam dignissimos porxcepturi dolorem.</p>
-                       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum voluptatum rerum Tempora!</p>
+                            <p data-key="about_text_1">სილამაზის სალონ Galerie de beauté-ში შექმნილია ყველა პირობა, იმისთვის, რომ მომხმარებელმა თავი იგრძნოს  განსაკუთრებულად და მიიღოს უმაღლესი ხარისხის მომსახურება!  
+                                თქვენი სილამაზე — ჩვენი პროფესიაა!</p>
+                            
+                            <p data-key="about_text_2">ჩვენს სილამაზის გალერეაში შეგიძლიათ არა მხოლოდ გამოკვეთოთ თქვენი ბუნებრივი სილამაზე, არამედ ისარგებლოთ ბარის მომსახურებითაც 🥂  
+                            ჩვენთან შეძლებთ განტვირთვას, სასიამოვნო გარემოსა და მრავალფეროვანი სასმელების დაგემოვნებას — როგორც ალკოჰოლური 🍷🍸🍹 ისე უალკოჰოლო ☕️🍹.</p>
+                            
                     </div>
                 </div>
             </div>
@@ -71,53 +95,53 @@
       <!-- start about end -->
 
      <!-- start services -->
-     <section class="services" id="services">
+     <section class="services reveal" id="services">
         <div class="services-content">
             <div class="section-title">
-                <h1>services</h1>
-                <span>what we do</span>
+                <h1>სერვისები</h1>
+                <span data-key="what_we_do">რას გთავაზობთ</span>
             </div>
             <div class="services-content-description">
                 <div class="box">
                     <div class="inner">
                         <img src="images/manicure.png">
-                        <p>manicure</p>
+                        <p data-key="manicure">მანიკიური</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="inner">
                         <img src="images/cosmetics.png">
-                        <p>makeup</p>
+                        <p data-key="makeup">მაკიაჟი</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="inner">
                         <img src="images/woman.png">
-                        <p>hairstyle</p>
+                        <p data-key="hairstyle">თმის ვარცხნილობა</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="inner">
                         <img src="images/scissor.png">
-                        <p>haircurt</p>
+                        <p data-key="haircut">თმის შეჭრა</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="inner">
                         <img src="images/eyebrows.png">
-                        <p>eyebrow design</p>
+                        <p data-key="eyebrow">წარბების დიზაინი</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="inner">
                         <img src="images/depilation.png">
-                        <p>waxing</p>
+                        <p data-key="waxing">დეპილაცია</p>
                     </div>
                 </div>
                 <div class="box">
                     <div class="inner">
                         <img src="images/cleansing.png">
-                        <p>skin cleansing</p>
+                        <p data-key="cleansing">კანის გაწმენდა</p>
                     </div>
                 </div>
             </div>
@@ -126,10 +150,10 @@
       <!-- end services -->
 
       <!-- start packege -->
-      <section class="package" id="package">
+      <section class="package reveal" id="package">
             <div class="section-title">
-                <h1>promotional packages</h1>
-                <span>for your bride's day</span>
+                <h1 data-key="promo_packages">სპეციალური პაკეტები</h1>
+                <span data-key="for_bride">შენი საქორწინო დღისთვის</span>
             </div>
             <div class="package-cards">
                 <div class="card">
@@ -139,37 +163,37 @@
                         <div class="card-item">
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>Hairstyle</p>
+                                <p data-key="package_hairstyle">თმის ვარცხნილობა</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>makeup</p>
+                                <p data-key="package_makeup">მაკიაჟი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>nails<span>(traditional french)</span></p>
+                                <p data-key="package_nails">ფრჩხილების გაკეთება<span>(traditional french)</span></p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">hair removal</p>
+                                <p class="not" data-key="package_hair_removal">დეპილაცია</p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">eyebrow design</p>
+                                <p class="not" data-key="package_eyebrow">წარბების დიზაინი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">skin cleansing</p>
+                                <p class="not" data-key="package_skin">კანის გაწმენდა</p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">reseved bridal room</p>
+                                <p class="not" data-key="package_room">დარეზერვებული პატარძლის ოთახი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">table fruit</p>
+                                <p class="not" data-key="package_fruit">ხილის მაგიდა</p>
                             </div>
-                            <button class="btn">I want this</button>
+                            <button class="btn" data-key="i_want_this">მინდა ეს პაკეტი</button>
                     </div>
                 </div>
                 <div class="card">
@@ -179,35 +203,35 @@
                         <div class="card-item">
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>Hairstyle</p>
+                                <p data-key="package_hairstyle">თმის ვარცხნილობა</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>makeup</p>
+                                <p data-key="package_makeup">მაკიაჟი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>nails<span>(traditional french)</span></p>
+                                <p data-key="package_nails">ფრჩხილების გაკეთება<span>(traditional french)</span></p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>hair removal</p>
+                                <p data-key="package_hair_removal">დეპილაცია</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>eyebrow design</p>
+                                <p data-key="package_eyebrow">წარბების დიზაინი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>skin cleansing</p>
+                                <p data-key="package_skin">კანის გაწმენდა</p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">reseved bridal room</p>
+                                <p class="not" data-key="package_room">დარეზერვებული პატარძლის ოთახი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">table fruit</p>
+                                <p class="not" data-key="package_fruit">ხილის მაგიდა</p>
                             </div>
                             <button class="btn">I want this</button>
                     </div>
@@ -296,11 +320,11 @@
       </section>
        <!-- end packege -->
         <!-- start Gallery -->
-         <section class="gallery" id="gallery">
+         <section class="gallery reveal" id="gallery">
             <div class="gallery-content">
                 <div class="section-title">
-                    <h1>Gallery</h1>
-                    <span>the princesse of our instagram</span>
+                    <h1 data-key="gallery">გალერეა</h1>
+                    <span data-key="instagram_princesses">ჩვენი ინსტაგრამის პრინცესები</span>
                 </div>
                 <div class="gallery-list-img">
                     <div class="gallery-img">
@@ -328,16 +352,16 @@
                         <img src="images/pexels-valeriya-939835.jpg">
                     </div>
                 </div>
-                <button class="btn">see more</button>
+                <button class="btn">იხილე მეტი ფოტო</button>
             </div>
          </section>
          <!-- end Gallery -->
           <!-- start testimoanls -->
-           <section class="testimonials" id="testimonials">
+           <section class="testimonials reveal" id="testimonials">
             <div class="testimonials-content">
                 <div class="section-title">
-                    <h1>testimonials</h1>
-                    <span>see what our clients say</span>
+                    <h1 data-key="testimonials">კლიენტების შეფასებები</h1>
+                    <span data-key="client_feedback">ნახეთ რას ამბობენ ჩვენი კლიენტები</span>
                 </div>
                 <div class="testimonials-card">
                     <div class="testimonials-item">
@@ -419,7 +443,7 @@
             <footer class="footer" id="conact">
                 <div class="footer-list">
                     <div class="footer-data">
-                        <h1><a href=""><img src="" alt="logo"></a></h1>
+                        <h1 class="logo"><a href="#"><img src="images/logo.jpg " alt="logo" width="100"></a></h1>
                         <div class="footer-data-social">
                             <a href=""><i class="fa-brands fa-facebook"></i></a>
                             <a href=""><i class="fa-brands fa-instagram"></i></a>
@@ -427,22 +451,22 @@
                         </div>
                     </div>
                     <div class="footer-data">
-                        <h2>address</h2>
+                        <h2 data-key="address">მისამართი</h2>
                         <p>alharm - st 26 <br> Giza - Egypt</p>
                     </div>
                     <div class="footer-data">
-                        <h2>We Opend</h2>
-                        <p>Monday To Friday <br> From 09:00 To 18:00</p>
+                        <h2 data-key="opened">სამუშაო საათები</h2>
+                        <p>ორშაბათი - პარასკევი <br> 09:00 დან 18:00 საათამდე</p>
                     </div>
                     <div class="footer-data">
-                        <h2>Contact</h2>
-                        <p>(20) 1111-222-333</p>
-                        <p>(20) 4444-555-666</p>
+                        <h2 data-key="contact_info">კონტაქტი</h2>
+                        <p>ტელ: (20) 1111-222-333</p>
+                        <p>მობ: (20) 4444-555-666</p>
                     </div>
                 </div>
                 <div class="copy">
-                    <p>&copy; All Rights Reserved</p>
-                    <span>Created by 🤍 web Trader</span>
+                    <p data-key="copyright">&copy; ყველა უფლება დაცულია</p>
+                    <span>შექმნილია 🤍 Web Trader-ის მიერ</span>
                 </div>
             </footer>
            <!-- start footer -->
