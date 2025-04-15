@@ -40,10 +40,7 @@
                     <li><a href="#package" class="nav-link" data-key="package">პაკეტი</a></li>
                     <li><a href="#gallery" class="nav-link" data-key="gallery">გალერეა</a></li>
                     <li><a href="#contact" class="nav-link" data-key="contact">კონტაქტი</a></li>
-                    <li class="lang-switcher">
-                        <a href="#" class="nav-link lang-toggle" id="lang-toggle">EN</a>
-                        
-                      </li>
+                    <li class="lang-switcher"><a href="#" class="nav-link lang-toggle" id="lang-toggle">EN</a></li>
                 </ul>
             </nav>
             <div class="nav-toggle" id="nav-toggle">
@@ -145,6 +142,7 @@
                     </div>
                 </div>
             </div>
+            <a href="price.html">click</a>
         </div>
      </section>
       <!-- end services -->
@@ -243,35 +241,35 @@
                         <div class="card-item">
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>Hairstyle</p>
+                                <p data-key="package_hairstyle">თმის ვარცხნილობა</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>makeup</p>
+                                <p data-key="package_makeup">მაკიაჟი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>nails<span>(traditional french)</span></p>
+                                <p data-key="package_nails">ფრჩხილების გაკეთება<span>(traditional french)</span></p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>hair removal</p>
+                                <p data-key="package_hair_removal">დეპილაცია</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>eyebrow design</p>
+                                <p data-key="package_eyebrow">წარბების დიზაინი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">skin cleansing</p>
+                                <p class="not" data-key="package_skin">კანის გაწმენდა</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>reseved bridal room</p>
+                                <p data-key="package_room">დარეზერვებული პატარძლის ოთახი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
-                                <p class="not">table fruit</p>
+                                <p class="not" data-key="package_fruit">ხილის მაგიდა</p>
                             </div>
                             <button class="btn">I want this</button>
                     </div>
@@ -283,35 +281,35 @@
                         <div class="card-item">
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>Hairstyle</p>
+                                <p data-key="package_hairstyle">თმის ვარცხნილობა</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>makeup</p>
+                                <p data-key="package_makeup">მაკიაჟი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>nails<span>(traditional french)</span></p>
+                                <p data-key="package_nails">ფრჩხილების გაკეთება<span>(traditional french)</span></p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>hair removal</p>
+                                <p data-key="package_hair_removal">დეპილაცია</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>eyebrow design</p>
+                                <p data-key="package_eyebrow">წარბების დიზაინი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>skin cleansing</p>
+                                <p data-key="package_skin">კანის გაწმენდა</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>reseved bridal room</p>
+                                <p data-key="package_room">დარეზერვებული პატარძლის ოთახი</p>
                             </div>
                             <div class="item">
                                 <i class="fa-regular fa-square-check check-icon"></i>
-                                <p>table fruit</p>
+                                <p data-key="package_fruit">ხილის მაგიდა</p>
                             </div>
                             <button class="btn">I want this</button>
                     </div>
@@ -356,90 +354,94 @@
             </div>
          </section>
          <!-- end Gallery -->
-          <!-- start testimoanls -->
-           <section class="testimonials reveal" id="testimonials">
-            <div class="testimonials-content">
-                <div class="section-title">
-                    <h1 data-key="testimonials">კლიენტების შეფასებები</h1>
-                    <span data-key="client_feedback">ნახეთ რას ამბობენ ჩვენი კლიენტები</span>
+          <!-- start price -->
+          <section class="prices" id="prices">
+            <div class="container">
+              <div class="section-title">
+                <h1 data-key="prices">ფასები</h1>
+                <span data-key="detailed_pricelist">სერვისების დეტალური კატალოგი</span>
+              </div>
+          
+              <div class="price-cards">
+                <div class="price-card">
+                  <h3 data-key="section_manicure">მანიკური</h3>
+                  <ul>
+                    <li data-key="manicure1">კლასიკური მანიკური – 25 ლარი</li>
+                    <li data-key="manicure2">კლასიკური + ლაქი – 35 ლარი</li>
+                    <li data-key="manicure3">ევროპული მანიკური – 20 ლარი</li>
+                    <li data-key="manicure4">ევროპული + ლაქი – 30 ლარი</li>
+                    <li data-key="manicure5">ევროპული + გელ ლაქი – 45 ლარი</li>
+                  </ul>
                 </div>
-                <div class="testimonials-card">
-                    <div class="testimonials-item">
-                        <div class="testimonials-img">
-                            <img src="" alt="Celaena">
-                        </div>
-                        <div class="testimonials-box">
-                            <div class="testimonials-name">
-                                <h1>Celaena</h1>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="testimonials-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, error ipsam rem cumque assumenda minus non hic praesentium, architecto, illo iure vitae obcaecati aliquid! Culpa doloremque earum ab dolores beatae!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="testimonials-img">
-                            <img src="" alt="Aline">
-                        </div>
-                        <div class="testimonials-box">
-                            <div class="testimonials-name">
-                                <h1>Aline</h1>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="testimonials-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, error ipsam rem cumque assumenda minus non hic praesentium, architecto, illo iure vitae obcaecati aliquid! Culpa doloremque earum ab dolores beatae!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="testimonials-img">
-                            <img src="" alt="Luciana">
-                        </div>
-                        <div class="testimonials-box">
-                            <div class="testimonials-name">
-                                <h1>Luciana</h1>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="testimonials-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, error ipsam rem cumque assumenda minus non hic praesentium, architecto, illo iure vitae obcaecati aliquid! Culpa doloremque earum ab dolores beatae!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonials-item">
-                        <div class="testimonials-img">
-                            <img src="" alt="Patricia">
-                        </div>
-                        <div class="testimonials-box">
-                            <div class="testimonials-name">
-                                <h1>Patricia</h1>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="testimonials-description">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, error ipsam rem cumque assumenda minus non hic praesentium, architecto, illo iure vitae obcaecati aliquid! Culpa doloremque earum ab dolores beatae!</p>
-                            </div>
-                        </div>
-                    </div>
+          
+                <div class="price-card">
+                  <h3 data-key="section_pedicure">პედიკური</h3>
+                  <ul>
+                    <li data-key="pedicure1">კლასიკური პედიკური – 50 ლარი</li>
+                    <li data-key="pedicure2">კლასიკური პედიკური + ლაქი – 55 ლარი</li>
+                    <li data-key="pedicure3">აპარატული + ლაქი – 65 ლარი</li>
+                    <li data-key="pedicure4">აპარატული + გელ ლაქი – 75 ლარი</li>
+                  </ul>
                 </div>
+          
+                <div class="price-card">
+                  <h3 data-key="section_brows_lashes">წარბები და წამწამები</h3>
+                  <ul>
+                    <li data-key="brows1">წარბების კორექცია – 20 ლარი</li>
+                    <li data-key="brows2">წარბების შეღებვა – 20 ლარი</li>
+                    <li data-key="brows3">წარბების ლამინირება – 65 ლარი</li>
+                    <li data-key="brows4">წამწამების ლამინირება – 80 ლარი</li>
+                    <li data-key="brows5">დაგრძელება (1D / 2D / 3D) – 120 ლარი</li>
+                  </ul>
+                </div>
+          
+                <div class="price-card">
+                  <h3 data-key="section_decoration">დეკორაცია</h3>
+                  <ul>
+                    <li data-key="deco1">სტრაზი – 1 ლარი</li>
+                    <li data-key="deco2">აკვარელი / სტემპინგი – 10 ლარი</li>
+                    <li data-key="deco3">დახატვა (1 ფრჩხილზე) – 5–15 ლარი</li>
+                    <li data-key="deco4">ქრომი / სტიკერი – 1–15 ლარი</li>
+                    <li data-key="deco5">ფრენჩი / ომბრე – 10–15 ლარი</li>
+                  </ul>
+                </div>
+          
+                <div class="price-card">
+                  <h3 data-key="section_strengthening">გამაგრება და აღდგენა</h3>
+                  <ul>
+                    <li data-key="strength1">თხევადი პოლიგელი – 20 ლარი</li>
+                    <li data-key="strength2">აკრილის ფუდრი – 20 ლარი</li>
+                    <li data-key="strength3">გელით / აკრილის გელით – 30 ლარი</li>
+                    <li data-key="strength4">1 ფრჩხილის გამაგრება – 8 ლარი</li>
+                  </ul>
+                </div>
+          
+                <div class="price-card">
+                  <h3 data-key="section_extension">დაგრძელება</h3>
+                  <ul>
+                    <li data-key="extend1">1 ფრჩხილის დაგრძელება – 12 ლარი</li>
+                    <li data-key="extend2">დაგრძელება + მანიკური + გელ ლაქი (ზომა 2) – 120 ლარი</li>
+                    <li data-key="extend3">დაგრძელება + მანიკური + გელ ლაქი (ზომა 3-4) – 150 ლარი</li>
+                    <li data-key="extend4">დაგრძელებული ფრჩხილების კორექცია – 100 ლარი</li>
+                    <li data-key="extend5">მოხსნა – 20 ლარი</li>
+                  </ul>
+                </div>
+          
+                <div class="price-card">
+                  <h3 data-key="section_mens">მამაკაცების სერვისები</h3>
+                  <ul>
+                    <li data-key="men1">კლასიკური მანიკური – 30 ლარი</li>
+                    <li data-key="men2">აპარატული მანიკური – 40 ლარი</li>
+                    <li data-key="men3">კომბინირებული პედიკური – 70 ლარი</li>
+                    <li data-key="men4">წარბების კორექცია – 30 ლარი</li>
+                    <li data-key="men">პედიკური + გელ ლაქი – 75 ლარი</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-           </section>
-           <!-- end testimoanls -->
+          </section>
+           <!-- end price -->
+        
             <footer class="footer" id="conact">
                 <div class="footer-list">
                     <div class="footer-data">
@@ -466,12 +468,11 @@
                 </div>
                 <div class="copy">
                     <p data-key="copyright">&copy; ყველა უფლება დაცულია</p>
-                    <span>შექმნილია 🤍 Web Trader-ის მიერ</span>
                 </div>
             </footer>
-           <!-- start footer -->
+        <!-- start footer -->
 
-            <!-- end footer -->
+        <!-- end footer -->
 
     <!--javascript File  -->
     <script src="main.js"></script>

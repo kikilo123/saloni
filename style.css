@@ -20,6 +20,8 @@
     --h3-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .813rem;
+
+    --header-height: 7rem;
 }
 *{
     margin: 0;
@@ -129,6 +131,8 @@ body{
   }
 
 .header{
+    height: var(--header-height);
+    padding: 10px 0;
     background-color: var(--second-color);
     color: var(--white-color);
     padding: 1rem 0;
@@ -151,7 +155,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 10px 20px;
 }
 
 .nav-menu .nav-list{
@@ -804,6 +808,73 @@ body{
     font-size: var(--small-font-size);
     margin-top: 0.5rem;
 }
+
+/* page 2 price*/
+.prices {
+    padding: 6rem 1rem;
+    background-color: var(--main-color);
+    text-align: center;
+    margin-top: 7rem;
+  }
+  .price-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .price-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+  }
+  .price-card:hover {
+    transform: scale(1.03);
+  }
+  .price-card h3 {
+    color: var(--frist-color);
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  .price-card ul {
+    padding-left: 0;
+    text-align: left;
+    list-style: none;
+  }
+  .price-card li {
+    margin-bottom: 0.6rem;
+    line-height: 1.6;
+    color: var(--black-color);
+  }
+  .price .section-title h1 {
+    font-size: 3rem;
+    color: var(--frist-color);
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .price .section-title span {
+    font-size: 1.2rem;
+    display: block;
+    margin: 0 auto 2rem auto;
+    max-width: 100%;
+    text-align: center;
+    line-height: 1.6;
+    word-break: break-word;
+  }
+  .price .section-title {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+
+  
 
 
 /* end footer */

@@ -39,7 +39,56 @@
       "package_eyebrow": "Eyebrow Design",
       "package_skin": "Skin Cleansing",
       "package_room": "Reserved Bridal Room",
-      "package_fruit": "Table Fruit"
+      "package_fruit": "Table Fruit",
+      "prices": "Prices",
+      "detailed_pricelist": "Detailed service catalog",
+
+      "section_manicure": "Manicure",
+      "manicure1": "Classic Manicure – 25 GEL",
+      "manicure2": "Classic + Polish – 35 GEL",
+      "manicure3": "European Manicure – 20 GEL",
+      "manicure4": "European + Polish – 30 GEL",
+      "manicure5": "European + Gel Polish – 45 GEL",
+
+      "section_pedicure": "Pedicure",
+      "pedicure1": "Classic Pedicure – 50 GEL",
+      "pedicure2": "Classic Pedicure + Polish – 55 GEL",
+      "pedicure3": "Apparatus + Polish – 65 GEL",
+      "pedicure4": "Apparatus + Gel Polish – 75 GEL",
+
+      "section_brows_lashes": "Brows and Lashes",
+      "brows1": "Eyebrow Correction – 20 GEL",
+      "brows2": "Eyebrow Tinting – 20 GEL",
+      "brows3": "Eyebrow Lamination – 65 GEL",
+      "brows4": "Eyelash Lamination – 80 GEL",
+      "brows5": "Extension (1D / 2D / 3D) – 120 GEL",
+
+      "section_decoration": "Decoration",
+      "deco1": "Strass – 1 GEL",
+      "deco2": "Watercolor / Stamping – 10 GEL",
+      "deco3": "Drawing (1 nail) – 5–15 GEL",
+      "deco4": "Chrome / Sticker – 1–15 GEL",
+      "deco5": "French / Ombre – 10–15 GEL",
+
+      "section_strengthening": "Strengthening and Recovery",
+      "strength1": "Liquid Polygel – 20 GEL",
+      "strength2": "Acrylic Powder – 20 GEL",
+      "strength3": "With Gel / Acrylic Gel – 30 GEL",
+      "strength4": "1 Nail Strengthening – 8 GEL",
+
+      "section_extension": "Nail Extension",
+      "extend1": "1 Nail Extension – 12 GEL",
+      "extend2": "Extension + Manicure + Gel (Size 2) – 120 GEL",
+      "extend3": "Extension + Manicure + Gel (Size 3–4) – 150 GEL",
+      "extend4": "Extension Correction – 100 GEL",
+      "extend5": "Removal – 20 GEL",
+
+      "section_mens": "Men's Services",
+      "men1": "Classic Manicure – 30 GEL",
+      "men2": "Apparatus Manicure – 40 GEL",
+      "men3": "Combined Pedicure – 70 GEL",
+      "men4": "Eyebrow Correction – 30 GEL",
+      "men5": "Pedicure + Gel Polish – 75 GEL"
     },
     "ka": {
       "home": "მთავარი",
@@ -81,6 +130,55 @@
       "package_eyebrow": "წარბების დიზაინი",
       "package_skin": "კანის გაწმენდა",
       "package_room": "დარეზერვებული პატარძლის ოთახი",
-      "package_fruit": "ხილის მაგიდა"
+      "package_fruit": "ხილის მაგიდა",
+      "prices": "ფასები",
+      "detailed_pricelist": "სერვისების დეტალური კატალოგი",
+  
+      "section_manicure": "მანიკური",
+      "manicure1": "კლასიკური მანიკური – 25 ლარი",
+      "manicure2": "კლასიკური + ლაქი – 35 ლარი",
+      "manicure3": "ევროპული მანიკური – 20 ლარი",
+      "manicure4": "ევროპული + ლაქი – 30 ლარი",
+      "manicure5": "ევროპული + გელ ლაქი – 45 ლარი",
+  
+      "section_pedicure": "პედიკური",
+      "pedicure1": "კლასიკური პედიკური – 50 ლარი",
+      "pedicure2": "კლასიკური პედიკური + ლაქი – 55 ლარი",
+      "pedicure3": "აპარატული + ლაქი – 65 ლარი",
+      "pedicure4": "აპარატული + გელ ლაქი – 75 ლარი",
+  
+      "section_brows_lashes": "წარბები და წამწამები",
+      "brows1": "წარბების კორექცია – 20 ლარი",
+      "brows2": "წარბების შეღებვა – 20 ლარი",
+      "brows3": "წარბების ლამინირება – 65 ლარი",
+      "brows4": "წამწამების ლამინირება – 80 ლარი",
+      "brows5": "დაგრძელება (1D / 2D / 3D) – 120 ლარი",
+  
+      "section_decoration": "დეკორაცია",
+      "deco1": "სტრაზი – 1 ლარი",
+      "deco2": "აკვარელი / სტემპინგი – 10 ლარი",
+      "deco3": "დახატვა (1 ფრჩხილზე) – 5–15 ლარი",
+      "deco4": "ქრომი / სტიკერი – 1–15 ლარი",
+      "deco5": "ფრენჩი / ომბრე – 10–15 ლარი",
+  
+      "section_strengthening": "გამაგრება და აღდგენა",
+      "strength1": "თხევადი პოლიგელი – 20 ლარი",
+      "strength2": "აკრილის ფუდრი – 20 ლარი",
+      "strength3": "გელით / აკრილის გელით – 30 ლარი",
+      "strength4": "1 ფრჩხილის გამაგრება – 8 ლარი",
+  
+      "section_extension": "დაგრძელება",
+      "extend1": "1 ფრჩხილის დაგრძელება – 12 ლარი",
+      "extend2": "დაგრძელება + მანიკური + გელ ლაქი (ზომა 2) – 120 ლარი",
+      "extend3": "დაგრძელება + მანიკური + გელ ლაქი (ზომა 3-4) – 150 ლარი",
+      "extend4": "დაგრძელებული ფრჩხილების კორექცია – 100 ლარი",
+      "extend5": "მოხსნა – 20 ლარი",
+  
+      "section_mens": "მამაკაცების სერვისები",
+      "men1": "კლასიკური მანიკური – 30 ლარი",
+      "men2": "აპარატული მანიკური – 40 ლარი",
+      "men3": "კომბინირებული პედიკური – 70 ლარი",
+      "men4": "წარბების კორექცია – 30 ლარი",
+      "men5": "პედიკური + გელ ლაქი – 75 ლარი"
     }
   }
