@@ -40,6 +40,7 @@
                     <li><a href="#package" class="nav-link" data-key="package">პაკეტი</a></li>
                     <li><a href="#gallery" class="nav-link" data-key="gallery">გალერეა</a></li>
                     <li><a href="#contact" class="nav-link" data-key="contact">კონტაქტი</a></li>
+                    <li><a href="#prices" class="nav-link" data-key="prices">ფასები</a></li>
                     <li class="lang-switcher"><a href="#" class="nav-link lang-toggle" id="lang-toggle">EN</a></li>
                 </ul>
             </nav>
@@ -55,9 +56,11 @@
                 <img src="home-img.png" alt="image">
             </div>
             <div class="home-content">
-                <h1>Your big day <br><span>in style</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="https://wa.me/9955XXXXXXX" target="_blank" class="btn btn-outline" data-key="schedule">
+                <h1 data-key="slogan" >
+                    <span class="highlight">თქვენი სილამაზე</span><br>
+                    ჩვენი <span class="underline">პროფესიაა!</span>
+                </h1>
+                <a href="https://wa.me/+995595090088" target="_blank" class="btn btn-outline" data-key="schedule">
                     <i class="fa-brands fa-whatsapp"></i>
                     დაიჯავშნე დრო
                 </a>
@@ -75,7 +78,7 @@
             <div class="about-detail">
                 <div class="about-detail-conent">
                     <div class="about-img">
-                        <img src="pexels-cottonbro-3993320.jpg" width="400" alt="">
+                        <img src="images/482149045_1193564922352099_4344224166573303109_n.jpg" width="400" alt="">
                     </div>
                     <div class="about-description">
                             <p data-key="about_text_1">სილამაზის სალონ Galerie de beauté-ში შექმნილია ყველა პირობა, იმისთვის, რომ მომხმარებელმა თავი იგრძნოს  განსაკუთრებულად და მიიღოს უმაღლესი ხარისხის მომსახურება!  
@@ -142,7 +145,6 @@
                     </div>
                 </div>
             </div>
-            <a href="price.html">click</a>
         </div>
      </section>
       <!-- end services -->
@@ -231,7 +233,7 @@
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
                                 <p class="not" data-key="package_fruit">ხილის მაგიდა</p>
                             </div>
-                            <button class="btn">I want this</button>
+                            <button class="btn" data-key="i_want_this">მინდა ეს პაკეტი</button>
                     </div>
                 </div>
                 <div class="card">
@@ -271,7 +273,7 @@
                                 <i class="fa-solid fa-square-xmark x-icon"></i>
                                 <p class="not" data-key="package_fruit">ხილის მაგიდა</p>
                             </div>
-                            <button class="btn">I want this</button>
+                            <button class="btn" data-key="i_want_this">მინდა ეს პაკეტი</button>
                     </div>
                 </div>
                 <div class="card">
@@ -311,7 +313,7 @@
                                 <i class="fa-regular fa-square-check check-icon"></i>
                                 <p data-key="package_fruit">ხილის მაგიდა</p>
                             </div>
-                            <button class="btn">I want this</button>
+                            <button class="btn" data-key="i_want_this">მინდა ეს პაკეტი</button>
                     </div>
                 </div>
             </div>
@@ -326,31 +328,28 @@
                 </div>
                 <div class="gallery-list-img">
                     <div class="gallery-img">
-                        <img src="images/pexels-alexander-mass-748453803-29692113.jpg">
+                        <img src="images/481137963_600609672792451_4881172640238211622_n.jpg">
                     </div>
                     <div class="gallery-img">
-                        <img src="images/pexels-cottonbro-3997387.jpg">
+                        <img src="images/481148609_1143680467539795_6239235732131136912_n.jpg">
                     </div>
                     <div class="gallery-img">
-                        <img src="images/pexels-enginakyurt-3065208.jpg">
+                        <img src="images/481745985_1171711617692371_553079078416708829_n.jpg">
                     </div>
                     <div class="gallery-img">
-                        <img src="images/pexels-enginakyurt-3065209.jpg">
+                        <img src="images/485668435_17850914334423472_7186816622123618712_n.jpg">
                     </div>
                     <div class="gallery-img">
-                        <img src="images/pexels-kerimeveyik-15866041.jpg">
+                        <img src="images/486412814_17851324263423472_6555276267941423536_n.jpg">
                     </div>
                     <div class="gallery-img">
-                        <img src="images/pexels-rdne-7755662.jpg">
+                        <img src="images/487297465_17851576338423472_5695624919793544285_n.jpg">
                     </div>
                     <div class="gallery-img">
-                        <img src="images/pexels-shkrabaanthony-5178001.jpg">
-                    </div>
-                    <div class="gallery-img">
-                        <img src="images/pexels-valeriya-939835.jpg">
+                        <img src="images/488277662_17852401326423472_7389844622872392900_n.jpg">
                     </div>
                 </div>
-                <button class="btn">იხილე მეტი ფოტო</button>
+                <!-- <button class="btn">იხილე მეტი ფოტო</button> -->
             </div>
          </section>
          <!-- end Gallery -->
@@ -434,42 +433,58 @@
                     <li data-key="men2">აპარატული მანიკური – 40 ლარი</li>
                     <li data-key="men3">კომბინირებული პედიკური – 70 ლარი</li>
                     <li data-key="men4">წარბების კორექცია – 30 ლარი</li>
-                    <li data-key="men">პედიკური + გელ ლაქი – 75 ლარი</li>
+                    <li data-key="men5">პედიკური + გელ ლაქი – 75 ლარი</li>
                   </ul>
                 </div>
               </div>
             </div>
           </section>
            <!-- end price -->
-        
-            <footer class="footer" id="conact">
-                <div class="footer-list">
-                    <div class="footer-data">
-                        <h1 class="logo"><a href="#"><img src="images/logo.jpg " alt="logo" width="100"></a></h1>
-                        <div class="footer-data-social">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram"></i></a>
-                            <a href=""><i class="fa-brands fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-data">
-                        <h2 data-key="address">მისამართი</h2>
-                        <p>alharm - st 26 <br> Giza - Egypt</p>
-                    </div>
-                    <div class="footer-data">
-                        <h2 data-key="opened">სამუშაო საათები</h2>
-                        <p>ორშაბათი - პარასკევი <br> 09:00 დან 18:00 საათამდე</p>
-                    </div>
-                    <div class="footer-data">
-                        <h2 data-key="contact_info">კონტაქტი</h2>
-                        <p>ტელ: (20) 1111-222-333</p>
-                        <p>მობ: (20) 4444-555-666</p>
-                    </div>
+           <footer class="footer" id="contact">
+            <div class="footer-list">
+              <div class="footer-data">
+                <h1 class="logo"><a href="#"><img src="images/logo.jpg" alt="logo" width="100"></a></h1>
+                <div class="footer-data-social">
+                  <a href="https://www.facebook.com/share/1HHEQaARTY/?mibextid=wwXIfr" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="https://www.instagram.com/galerie_2025?igsh=OWI2dG12emJxNDVn" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <div class="copy">
-                    <p data-key="copyright">&copy; ყველა უფლება დაცულია</p>
-                </div>
-            </footer>
+              </div>
+          
+              <div class="footer-data">
+                <h2 data-key="address">მისამართი</h2>
+                <p data-key="location">გერონტი ქიქოძის 10,<br> თბილისი საქართველო</p>
+              </div>
+          
+              <div class="footer-data">
+                <h2 data-key="opened">სამუშაო საათები</h2>
+                <p data-key="hours">ყოველ დღე <br> 10:00 საათიდან 20:00 საათამდე</p>
+              </div>
+          
+              <div class="footer-data">
+                <h2 data-key="contact_info">კონტაქტი</h2>
+                <p><spn data-key="phone">ტელ:</spn> <br> +995 595 090 088</p>
+              </div>
+            </div>
+          
+            <!-- რუკა -->
+            <div class="map">
+              <!-- <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d372.56938134335086!2d44.799999!3d41.688888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd9d4e70fcd%3A0x123456789abcdef!2zZ2VyZW50aSBraWtvenRpcyAxMCwgVGJpbGlzaQ!5e0!3m2!1ska!2sge!4v1681918328260" 
+                width="100%" 
+                height="250" 
+                style="border:0; max-width: 1000px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe> -->
+              <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d744.8479023093557!2d44.79821582191039!3d41.69048105599323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cedf3fbf355%3A0xaf93cfcb910e5ba4!2zMTAg4YOS4YOU4YOg4YOd4YOc4YOi4YOYIOGDpeGDmOGDpeGDneGDq-GDmOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmCAwMTA1LCDhg6Hhg5Dhg6Xhg5Dhg6Dhg5fhg5Xhg5Thg5rhg50!5e0!3m2!1ska!2sfr!4v1744800737201!5m2!1ska!2sfr" width="100%" height="250" style="border:0; max-width: 1000px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d744.8479023093557!2d44.79821582191039!3d41.69048105599323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cedf3fbf355%3A0xaf93cfcb910e5ba4!2zMTAg4YOS4YOU4YOg4YOd4YOc4YOi4YOYIOGDpeGDmOGDpeGDneGDq-GDmOGDoSDhg6Xhg6Phg6nhg5AsIOGDl-GDkeGDmOGDmuGDmOGDoeGDmCAwMTA1LCDhg6Hhg5Dhg6Xhg5Dhg6Dhg5fhg5Xhg5Thg5rhg50!5e0!3m2!1ska!2sfr!4v1744800737201!5m2!1ska!2sfr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          
+            <div class="copy">
+              <p data-key="copyright">&copy; ყველა უფლება დაცულია</p>
+            </div>
+          </footer>
         <!-- start footer -->
 
         <!-- end footer -->
