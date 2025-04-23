@@ -254,7 +254,7 @@ body{
 }
 .home .home-img img{
     max-width: 100%;
-    width: 600px;
+    width: 500px;
     height: auto;
 }
 .home .home-content{
@@ -292,6 +292,44 @@ body{
     font-weight: 400;
     line-height: 1.5rem;
 
+}
+
+.home .container .logo-main {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+    margin-right: 50px;
+}
+.home .container .logo-main img {
+    position: absolute;
+    top: 31rem;
+    left: 35rem;
+    border-radius: 50%;
+    border: 3px solid var(--frist-color);
+    /* margin-top: -5px;  */
+    width: 60px;
+    height: auto;
+}
+.services .services-content .services-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.services .services-content .services-btn a{
+    background-color: var(--second-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+.services .services-content .services-btn a:hover{
+    background-color: var(--frist-color);
+    color: var(--black-color);
+    transform: scale(1.05);
 }
 
 /* end home section */
