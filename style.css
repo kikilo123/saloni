@@ -823,7 +823,7 @@ body{
   }
   
 
-/* page 2 price*/
+/* page 2 all-services*/
 .prices {
     padding: 6rem 1rem;
     background-color: var(--main-color);
@@ -886,6 +886,10 @@ body{
     text-align: center;
     padding: 0 1rem;
   }
+
+.prices .services-all{
+    margin-top: 70px;
+}
   
 
   
