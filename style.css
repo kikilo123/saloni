@@ -37,7 +37,7 @@
 }
 body{
     font-family: var(--font-body);
-    background-color: #ffff;
+    background-color: #eaaab6;
     color: var(--black-color);
     margin: 0;
     padding: 0;
@@ -244,7 +244,7 @@ body{
     margin-top: 7.01rem;
     width: 100%;
     height: 100vh;
-    background-color: #fbeefb;
+    background-color: #eaaab6;
     border-radius: 0 0 300px 0;
 }
 .home .container {
