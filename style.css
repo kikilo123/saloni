@@ -247,24 +247,34 @@ body{
     background-color: var(--main-color);
     border-radius: 0 0 300px 0;
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.home .container {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* მნიშვნელოვანია რომ პატარა ეკრანებზე გადმოვიდეს ქვემოთ */
+    gap: 2rem;
+    padding: 2rem;
 }
 .home .home-img img{
     max-width: 100%;
     width: 500px;
     height: auto;
+    /* width: 100%;
+    height: auto; */
 }
 .home .home-content{
-    width: 40%;
+    /* width: 40%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center; */
+       flex: 1 1 45%; /* ისიც 45% */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+    text-align: left;
 }
 .home-content h1{
     font-family: "BPG Glaho", "Great Vibes", cursive, sans-serif;
@@ -303,8 +313,8 @@ body{
 }
 .home .container .logo-main img {
     position: absolute;
-    top: 31rem;
-    left: 35rem;
+    top: 33rem;
+    left: 27.5rem;
     border-radius: 50%;
     border: 3px solid var(--frist-color);
     /* margin-top: -5px;  */
@@ -749,6 +759,66 @@ body{
     background-color: var(--frist-color);
     color: var(--black-color);
 } */
+
+/* Popup ფონზე დაბლარება */
+.popup {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+    
+    opacity: 0; 
+    pointer-events: none; 
+    transition: opacity 0.5s ease; 
+}
+.popup.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Popup სურათის ზომა */
+.popup-img {
+    max-width: 70%; 
+    max-height: 80vh;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Popup-ის დახურვის ღილაკი */
+.close {
+    position: absolute;
+    top: 150px;
+    right: 18rem;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+.close:hover {
+    color: var(--frist-color);
+}
+.popup-controls {
+    margin-top: 20px;
+}
+
+.popup-controls button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.popup-controls button:hover {
+    color: var(--frist-color);
+}
+
 /* end gallery */
 
 /* sraterd footer */
@@ -898,6 +968,52 @@ body{
     .logo {
         flex-direction:row;
     }
+    .navbar {
+        padding: 10px 10px;
+    }
+    .logo img {
+        width: 45px;
+    }
+    .nav-menu .nav-list {
+        gap: 1rem;
+    }
+    .home .container .logo-main img {
+        top: 33rem;
+        left: 27rem;
+    }
+}
+@media (max-width: 992px) {
+    .home .container{
+        flex-direction: column;
+
+    }
+    .home .container .home-img {
+        margin-top: -9rem;
+
+    };
+    .home .container .home-img img{
+        max-width: 100%;
+        width: 200px;
+        height: auto;
+    }
+    .home .container .home-content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: -5rem;
+    }
+    .home .container .logo-main img {
+        top: 25rem;
+        left: 40.5rem;
+    }
+
+    .prices .container .section-title h1{
+        margin-top: 50px;
+    }
+    .footer .footer-list{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        text-align: center;
+    }
 }
 
 @media(max-width:768px){
@@ -935,6 +1051,9 @@ body{
     .home .home-img img{
         display: none;
     }
+    .home .logo-main img{
+        display: none;
+    }
     .home .home-content{
         width: 100%;
         height: 100vh;
@@ -942,8 +1061,14 @@ body{
         align-items: center;
         justify-content: center;
     }
+   
     .home-content h1{
-        font-size: var(--big-font-size);
+        font-size: 40px;
+        margin-top: 20rem;
+        margin-left: 5rem;
+    }
+    .prices .container .section-title h1{
+        margin-top: 150px;
     }
     .home-content p{
         padding: 0.2rem;
@@ -999,6 +1124,11 @@ body{
     }
     .footer-list{
         grid-template-columns: unset;
+    }
+}
+@media (max-width: 400px) {
+    .home-content h1 {
+        font-size: 1.5rem;
     }
 }
 

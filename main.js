@@ -81,4 +81,49 @@ langToggle.addEventListener('click', function (e) {
 
 // ჩატვირთე ენა თავიდან
 loadTranslations(currentLang);
-  
+
+
+const galleryImgs = document.querySelectorAll('.gallery-img img');
+const popup = document.getElementById('popup');
+const popupImg = document.getElementById('popupImg');
+const closeBtn = document.getElementById('closeBtn');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+let currentIndex = 0;
+
+galleryImgs.forEach((img, index) => {
+    img.addEventListener('click', () => {
+        popup.classList.add ('show');
+        popupImg.src = img.src;
+        currentIndex = index;
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    popup.classList.remove ('show');
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + galleryImgs.length) % galleryImgs.length;
+    popupImg.src = galleryImgs[currentIndex].src;
+});
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % galleryImgs.length;
+    popupImg.src = galleryImgs[currentIndex].src;
+});
+
+
+popup.addEventListener('click', (e) => {
+    if (e.target === popup) {
+        popup.classList.remove('show');
+    }
+});
+
+// კლავიატურაზე 'Escape' ღილაკზე დაჭერისას popup-ის დახურვა
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+      popup.classList.remove('show');
+  }
+});
