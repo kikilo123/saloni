@@ -37,7 +37,7 @@
 }
 body{
     font-family: var(--font-body);
-    background-color: #eaaab6;
+    background-color: #ffedf1;
     color: var(--black-color);
     margin: 0;
     padding: 0;
@@ -244,7 +244,7 @@ body{
     margin-top: 7.01rem;
     width: 100%;
     height: 100vh;
-    background-color: #eaaab6;
+    background-color: #ffedf1;
     border-radius: 0 0 300px 0;
 }
 .home .container {
@@ -403,7 +403,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #eaaab6;
+    background-color: #ffedf1;
     z-index: -1;
 }
 .about-detail {
@@ -707,7 +707,7 @@ body{
     height: 100%;
     top: 20%;
     left: 0;
-    background-color: #eaaab6;
+    background-color: #ffedf1;
     z-index: -1;
 }
 
@@ -897,7 +897,7 @@ body{
 /* page 2 all-services*/
 .prices {
     padding: 6rem 1rem;
-    background-color: #eaaab6;
+    background-color: #ffedf1;
     text-align: center;
     margin-top: 7rem;
   }
