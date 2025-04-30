@@ -248,11 +248,12 @@ body{
 }
 .home .container {
     display: flex;
+    flex-direction: column; /* ელემენტები ზემოდან ქვემოთ */
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* მნიშვნელოვანია რომ პატარა ეკრანებზე გადმოვიდეს ქვემოთ */
+    justify-content: center;
     gap: 2rem;
     padding: 2rem;
+    text-align: center;
 }
 .home .home-img img{
     max-width: 100%;
@@ -268,12 +269,12 @@ body{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center; */
-       flex: 1 1 45%; /* ისიც 45% */
+    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center; /* ტექსტი და ღილაკი ცენტრში */
+    text-align: center;
 }
 .home-content h1{
     font-family: "BPG Glaho", "Great Vibes", cursive, sans-serif;
