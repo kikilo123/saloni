@@ -240,7 +240,7 @@ body{
 
 /* start home section */
 .home{
-    margin-top: 7.01rem;
+    margin-top: 3rem;
     width: 100%;
     height: 100vh;
     background-color: #ffedf1;
@@ -255,12 +255,30 @@ body{
     padding: 2rem;
     text-align: center;
 }
+.home .home-img{
+    padding: 1rem;
+    background: #fff;
+    border-radius: 25px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 0 auto;
+}
+
 .home .home-img img{
     max-width: 100%;
     width: 400px;
     height: auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ჩრდილი */
+    border: 4px solid #f4c05e; /* ოქროსფერი ჩარჩო */
+    background: #fff0f4; /* დამატებითი ფონიც შეგიძლია */
+    transition: all 0.3s ease-in-out;
     /* width: 100%;
     height: auto; */
+}
+.home-img img:hover {
+    transform: scale(1.03);
+    transition: all 0.3s ease-in-out;
 }
 .home .home-content{
     /* width: 40%;
