@@ -269,9 +269,9 @@ body{
     width: 400px;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* ჩრდილი */
-    border: 4px solid #f4c05e; /* ოქროსფერი ჩარჩო */
-    background: #fff0f4; /* დამატებითი ფონიც შეგიძლია */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 4px solid #f4c05e; 
+    background: #fff0f4; 
     transition: all 0.3s ease-in-out;
     /* width: 100%;
     height: auto; */
@@ -864,6 +864,7 @@ body{
 }
 .footer-data-social{
     margin-top: -10px;
+    margin-left: -25px;
 }
 .footer-data-social i{
     color: var(--frist-color);
@@ -913,13 +914,13 @@ body{
   
 
 /* page 2 all-services*/
-.prices {
+.all_services {
     padding: 6rem 1rem;
     background-color: #ffedf1;
     text-align: center;
     margin-top: 7rem;
   }
-  .price-cards {
+  .services-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2rem;
@@ -927,40 +928,40 @@ body{
     max-width: 1000px;
     margin: 0 auto;
   }
-  .price-card {
+  .services-card {
     background: #fff;
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     transition: 0.3s ease;
   }
-  .price-card:hover {
+  .services-card:hover {
     transform: scale(1.03);
   }
-  .price-card h3 {
+  .services-card h3 {
     color: var(--frist-color);
     font-size: 1.6rem;
     margin-bottom: 1rem;
     font-weight: bold;
   }
-  .price-card ul {
+  .services-card ul {
     padding-left: 0;
     text-align: left;
     list-style: none;
   }
-  .price-card li {
+  .services-card li {
     margin-bottom: 0.6rem;
     line-height: 1.6;
     color: var(--black-color);
   }
-  .price .section-title h1 {
+  .all_services .section-title h1 {
     font-size: 3rem;
     color: var(--frist-color);
     text-align: center;
     margin: 0 auto;
     display: inline-block;
   }
-  .price .section-title span {
+  .all_services .section-title span {
     font-size: 1.2rem;
     display: block;
     margin: 0 auto 2rem auto;
@@ -969,14 +970,14 @@ body{
     line-height: 1.6;
     word-break: break-word;
   }
-  .price .section-title {
+  .all_services .section-title {
     max-width: 1000px;
     margin: 0 auto;
     text-align: center;
     padding: 0 1rem;
   }
 
-.prices .services-all{
+.all_services .services-all{
     margin-top: 70px;
 }
   
