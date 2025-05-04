@@ -127,3 +127,24 @@ document.addEventListener('keydown', (e) => {
       popup.classList.remove('show');
   }
 });
+
+const links = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  const fromTop = window.scrollY;
+
+  links.forEach(link => {
+    if (!link.hash) return; // 🛡️ Skip if hash is empty
+
+    const section = document.querySelector(link.hash);
+    if (!section) return; // 🛡️ Skip if the section is not found
+
+    if (
+      section.offsetTop <= fromTop + 100 &&
+      section.offsetTop + section.offsetHeight > fromTop + 100
+    ) {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+    }
+  });
+});
