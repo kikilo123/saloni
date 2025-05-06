@@ -370,7 +370,7 @@ body{
 .about{
     width: 100%;
     padding: 7rem 0;
-    background-image: url('images/about-bg.jpg');
+    /* background-image: url('images/about-bg.jpg'); */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
